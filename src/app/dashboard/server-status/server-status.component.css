@@ -11,11 +11,12 @@
 }
 
 .status-online p:first-of-type {
-  color: #6a3cb0;
+  color: #02be22;
+  animation: pulse 1s;
 }
 
 .status-offline p:first-of-type {
-  color: #b22084;
+  color: #b2202c;
 }
 
 .status-unknown p:first-of-type {
