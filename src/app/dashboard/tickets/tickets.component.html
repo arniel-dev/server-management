@@ -1,7 +1,10 @@
 <div>
   <ul>
     @if(tickets.length > 0) { @for (ticket of tickets; track $index) {
-    <app-ticket [data]="ticket" (close)="onCloseTicket(ticket.id)" />
+    <li>
+      <app-ticket [data]="ticket" (close)="onCloseTicket(ticket.id)" />
+    </li>
+
     } } @else{
     <li>No tickets available.</li>
     }

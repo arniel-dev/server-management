@@ -11,7 +11,7 @@ import { Ticket } from '../ticket.model';
 export class TicketComponent {
   @Input({ required: true }) data!: Ticket;
   close = output<void>();
-  isOpenDetails = true;
+  isOpenDetails = false;
 
   onToggleDetails(): void {
     this.isOpenDetails = !this.isOpenDetails;
