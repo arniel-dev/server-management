@@ -1,7 +1,11 @@
-<form>
-  <app-control label="Title" type="text" value=""></app-control>
-  <app-control label="Request" type="textarea" value=""></app-control>
+<form (ngSubmit)="OnSubmit(title.value, request.value, $event)" #myForm>
+  <app-control label="Title">
+    <input #title type="text" id="title" />
+  </app-control>
+  <app-control label="Request">
+    <textarea #request rows="3" id="request"></textarea>
+  </app-control>
   <p>
-    <button app-button name="Submit" icon="⌲"></button>
+    <button app-button type="submit" name="Submit" icon="⌲"></button>
   </p>
 </form>

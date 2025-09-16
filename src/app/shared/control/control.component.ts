@@ -10,6 +10,4 @@ import { Component, Input } from '@angular/core';
 })
 export class ControlComponent {
   @Input() label!: string;
-  @Input() type: string = 'textarea';
-  @Input() value: string = '';
 }

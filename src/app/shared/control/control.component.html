@@ -1,5 +1,4 @@
 <p class="control">
   <label>{{ label }}</label>
-  <input *ngIf="type === 'text'" [type]="type" [value]="value" />
-  <textarea *ngIf="type === 'textarea'" [rows]="3">{{ value }}</textarea>
+  <ng-content />
 </p>
